@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🚀 Alberto Naranjo</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Música de fondo -->
+  <audio id="background-music" loop>
+    <source src="epic-relaxing-flute-music-144009.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">🚀 Alberto Naranjo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+        <!-- Botón de reproducción en la parte derecha del nav -->
+        <button id="play-pause-btn" class="btn btn-primary ms-3" onclick="toggleMusic()">
+          <i id="play-icon" class="bi bi-play-fill"></i> Reproducir
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <header id="hero" class="hero-section d-flex align-items-center text-center text-white">
+    <div class="container">
+      <h1 class="display-3 fw-bold animate__animated animate__fadeInDown">Bienvenido al Futuro Digital</h1>
+      <p class="lead animate__animated animate__fadeInUp">Diseñando y desarrollando experiencias tecnológicas impactantes.</p>
+      <a href="#projects" class="btn btn-outline-light btn-lg mt-3 animate__animated animate__pulse animate__infinite">Ver Proyectos</a>
+    </div>
+  </header>
+
+  <!-- Sección Sobre mí -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 class="fw-bold">Sobre mí</h2>
+          <p>Soy un desarrollador web apasionado por crear soluciones digitales modernas. Me especializo en diseño UX/UI, desarrollo de software y tecnologías innovadoras para empresas y startups.</p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="https://images.pexels.com/photos/4344677/pexels-photo-4344677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width=50%" alt="Sobre mí" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Proyectos -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Proyectos Destacados</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://i.blogs.es/d0183c/1money/1366_2000.jpg" class="card-img-top" alt="Rediseño UX App FinTech">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Rediseño UX App FinTech</h5>
+              <p class="card-text">Transformación de la experiencia del usuario para una aplicación de finanzas.</p>
+              <a href="project.html" class="btn btn-primary mt-auto" target="_blank">Ver Detalle</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://ilimit.com/wp-content/uploads/2020/03/Mejorar-rendimiento-e-commerce.png" class="card-img-top" alt="Plataforma E-Commerce">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Plataforma E-Commerce</h5>
+              <p class="card-text">Desarrollo de una tienda en línea escalable.</p>
+              <a href="project.html" class="btn btn-primary mt-auto" target="_blank">Ver Detalle</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://www.hiberus.com/crecemos-contigo/wp-content/uploads/2019/11/fichaje-app.png" class="card-img-top" alt="Desarrollo de Sitio Web Corporativo">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Desarrollo de Sitio Web Corporativo</h5>
+              <p class="card-text">Creación de un sitio web corporativo moderno y responsivo para una empresa líder en tecnología.</p>
+              <a href="project.html" class="btn btn-primary mt-auto" target="_blank">Ver Detalle</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Testimonios -->
+  <section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Testimonios</h2>
+      <div id="carouselTestimonials" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <div class="text-center">
+                <p class="fs-4">"Alberto es un desarrollador excepcional, su atención al detalle y habilidad para entender las necesidades de los clientes es insuperable."</p>
+                <p class="fw-bold">Juan Pérez</p>
+                <p>CEO, Tech Solutions</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="text-center">
+                <p class="fs-4">"El diseño y la funcionalidad del sitio web que desarrolló para nuestra empresa fueron impresionantes. ¡Altamente recomendado!"</p>
+                <p class="fw-bold">Maria González</p>
+                <p>Marketing Director, Innovatech</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="text-center">
+                <p class="fs-4">"Gracias a Alberto, nuestra plataforma de comercio electrónico ha alcanzado nuevas alturas en rendimiento y usabilidad."</p>
+                <p class="fw-bold">Carlos Rodríguez</p>
+                <p>CTO, E-Shop</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Artículos Interesantes -->
+  <section id="articles" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Artículos Interesantes</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://integrait.com.mx/wp-content/uploads/2016/08/UX.png" class="card-img-top" alt="Artículo 1">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">La Evolución del Diseño UX/UI</h5>
+              <p class="card-text">En el mundo actual, el diseño UX/UI se ha convertido en una parte fundamental de la creación de productos digitales.</p>
+              <a href="article.html" class="btn btn-primary mt-auto">Leer más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://i0.wp.com/brandformance.la/wp-content/uploads/2023/02/nota-1-3.png?fit=1350%2C1080&ssl=1" class="card-img-top" alt="Artículo 2">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">El Futuro del Diseño UX/UI: Tendencias Emergentes</h5>
+              <p class="card-text">En este artículo exploramos las tendencias más innovadoras en diseño de experiencia de usuario (UX) y diseño de interfaz de usuario (UI).</p>
+              <a href="article.html" class="btn btn-primary mt-auto">Leer más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://www.dimtec.com/img/solutions/rendimiento-web.webp" class="card-img-top" alt="Artículo 3">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Cómo Mejorar el Rendimiento de tu Sitio Web: Consejos y Herramientas</h5>
+              <p class="card-text">Si tu sitio web está lento, este artículo es para ti. Abordamos las mejores prácticas para optimizar la velocidad de carga de tu página.</p>
+              <a href="article.html" class="btn btn-primary mt-auto">Leer más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section id="contact" class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Contacto</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Tu email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Tu mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-light">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Alberto Naranjo. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    var audio = document.getElementById("background-music");
+    var playPauseBtn = document.getElementById("play-pause-btn");
+    var playIcon = document.getElementById("play-icon");
+
+    // Función para alternar reproducción y pausa
+    function toggleMusic() {
+      if (audio.paused) {
+        audio.play();
+        playIcon.classList.remove("bi-play-fill");
+        playIcon.classList.add("bi-pause-fill");
+        playPauseBtn.innerHTML = '<i class="bi bi-pause-fill"></i> Pausar';
+      } else {
+        audio.pause();
+        playIcon.classList.remove("bi-pause-fill");
+        playIcon.classList.add("bi-play-fill");
+        playPauseBtn.innerHTML = '<i class="bi bi-play-fill"></i> Reproducir';
+      }
+    }
+
+    // Intenta reproducir la música automáticamente
+    document.addEventListener("DOMContentLoaded", function () {
+      var playPromise = audio.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(error => {
+          console.log("Reproducción automática bloqueada, esperando interacción del usuario.");
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

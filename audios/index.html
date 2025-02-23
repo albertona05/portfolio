@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproductores de Audio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .audio-container {
+      width: 80%;
+      max-width: 600px;
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Reproductores de Audio</h1>
+
+  <div class="audio-container">
+    <h2>Audio 1</h2>
+    <audio controls>
+      <source src="./epic-relaxing-flute-music-144009.mp3" type="audio/mpeg">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+  </div>
+
+  <div class="audio-container">
+    <h2>Audio 2</h2>
+    <audio controls>
+      <source src="./epic-relaxing-flute-music-144009.ogg" type="audio/ogg">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+  </div>
+</body>
+</html>

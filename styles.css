@@ -1,0 +1,26 @@
+/* Custom Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .hero-section {
+    background: linear-gradient(135deg, #000428, #004e92);
+    height: 100vh;
+    color: white;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+  }
+  
+  .btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+  }
+  
+  .btn-outline-light:hover {
+    background: white;
+    color: #004e92;
+  }
+  
